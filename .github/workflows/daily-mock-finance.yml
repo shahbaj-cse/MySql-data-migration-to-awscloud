@@ -2,7 +2,7 @@ name: Daily Mock Finance Update
 
 on:
   schedule:
-    - cron: '20 12 * * *'  # Runs every day at 12:20 PM UTC
+    - cron: '33 15 * * *'  # Runs every day at 12:20 PM UTC
   workflow_dispatch:  # Allows manual trigger from GitHub Actions
 
 jobs:
