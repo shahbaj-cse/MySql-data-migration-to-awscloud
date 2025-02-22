@@ -50,7 +50,7 @@ The project’s implementation is divided into clear, sequential steps:
 
 - I provided data analyst Vikas with the necessary access by creating a dedicated user and assigning the required permissions on Redshift. This setup enables him to perform visualization on Power BI. 
 - Below is a snapshot of the dashboards he developed.
-![Dashboard Snapshot](./dashboard_snapshot.png)
+![Dashboard Snapshot](retail_finance_dashboard.jpg)
 
 For more details on how he builds interactive dashboards and analyzes the stored Redshift data, please refer to his repository or LinkedIn profile.
   
