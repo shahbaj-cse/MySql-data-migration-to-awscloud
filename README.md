@@ -41,7 +41,7 @@ The project’s implementation is divided into clear, sequential steps:
 
 4. **Data Transformation and Loading into Redshift:**
    - Execute an AWS Glue job ([glu_job_script](./glu_job_script)) to cleanse the migrated data (e.g., removing CDC markers) and Load the cleansed data into Amazon Redshift with job bookmarks ensuring only new         data is processed.
-  [redshift-load-glue-job-diagram](Glue_job_architecture.jpg)
+   ![Glue_job_architecture](Glue_job_architecture.jpg)
 
 5. **Automation and Triggering:**
    - Deploy the [lambda_function](./lambda_function.py) to trigger the Glue job upon new data arrival in the S3 bucket.
