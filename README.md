@@ -98,7 +98,7 @@ This repository includes the following key files and directories:
     *Lambda function code to trigger the Glue job on new S3 object events.*
 
 - **Architecture Diagrams:**
-  - [architecture.png](./architecture.png)  
+  - [architecture](./architecture.png)  
     *Overall architecture diagram of the solution.*
   - [Glue_job_architecture](./Glue_job_architecture.jpg)  
     *Diagram illustrating the AWS Glue job architecture.*
