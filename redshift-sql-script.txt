@@ -1,0 +1,51 @@
+CREATE TABLE customers (
+  customer_id INT NOT NULL,
+  name        VARCHAR(100),
+  email       VARCHAR(100),
+  phone       VARCHAR(20),
+  address     VARCHAR(500),
+  created_at  TIMESTAMP
+);
+
+
+
+CREATE TABLE products (
+  product_id     INT NOT NULL,
+  name           VARCHAR(100),
+  category       VARCHAR(100),
+  price          DECIMAL(10,2),
+  stock_quantity INT
+)
+DISTSTYLE AUTO
+SORTKEY (product_id);
+
+COPY products
+from 's3://retail-finance-data/retail_finance/products/'
+IAM_ROLE 'arn:aws:iam::476114141463:role/redshift_role'
+FORMAT AS PARQUET;
+
+CREATE TABLE transactions (
+    transaction_id INT NOT NULL,
+    customer_id INT,
+    transaction_date TIMESTAMP,
+    amount DECIMAL(10,2),
+    payment_method VARCHAR(20),
+    status VARCHAR(20)
+)
+DISTSTYLE AUTO
+SORTKEY (transaction_date);
+
+CREATE TABLE orders (
+    order_id INT NOT NULL,
+    customer_id INT,
+    product_id INT,
+    order_date TIMESTAMP,
+    quantity INT,
+    total_price DECIMAL(10,2)
+)
+DISTSTYLE AUTO
+SORTKEY (order_date);
+
+truncate TABLE products;
+
+select COUNT(*) from orders;
