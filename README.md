@@ -100,7 +100,7 @@ This repository includes the following key files and directories:
 - **Architecture Diagrams:**
   - [architecture.png](./architecture.png)  
     *Overall architecture diagram of the solution.*
-  - [Glue_job_architecture.png](./Glue_job_architecture.png)  
+  - [Glue_job_architecture](./Glue_job_architecture.jpg)  
     *Diagram illustrating the AWS Glue job architecture.*
 
 - **Dependencies:**
