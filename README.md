@@ -117,6 +117,6 @@ You can reach out to me directly via email at [shahbajcse@gmail.com](mailto:shah
 
 Additionally, if you'd like to connect with our data analyst, Vikas—who handled the complete visualization—please check out his profiles:
 - **LinkedIn:** [Vikas Kumar](https://www.linkedin.com/in/vikas-singh00/)
-- **Repository:** [github://vikas-visualization](github://vikas-visualization)
+- **Repository:** [Retail Finance Data Analysis](https://github.com/Vikas5050/Retail-Finance-Data-Analysis-)
 
 Thank you and happy collaborating!
